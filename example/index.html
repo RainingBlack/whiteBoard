@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./jquery-2.1.1.min.js"></script>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            background: #ceffb1;
+        }
+
+        #content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .showTest{
+            width: 80%;
+            height: 80%;
+
+            background-color: #FFA735;
+        }
+
+        #tools{
+            width: 100%;
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .toolButton{
+            width: 80px;
+            height: 35px;
+            background-color: #FFA735;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-left: 10px;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <!--<canvas width="500px" height="500px" id="canvasElementId"></canvas>-->
+    <div id="showTest" class="showTest"></div>
+    <div style="width: 100%;height: 20px"></div>
+    <!--<canvas id="canvasElementId" class="canvasElementId" style="z-index: 10" width="500" height="500"><div class="aaaa"><canvas id="canvasElementId2" class="canvasElementId2" style="background-color: #FFA735;z-index: 11" width="500" height="500"></canvas></div></canvas>-->
+    <div id="tools" onclick="window.clickEvent(event)">
+        <div id="create" class="toolButton">创建</div>
+        <div id="pencil" class="toolButton">画笔</div>
+        <div id="highPencil" class="toolButton">荧光笔</div>
+        <div id="arrow" class="toolButton">箭头</div>
+        <div id="rect" class="toolButton">矩形</div>
+        <div id="circle" class="toolButton">圆</div>
+        <div id="text" class="toolButton">文字</div>
+        <div id="rubber" class="toolButton">橡皮</div>
+        <div id="draft" class="toolButton">拖拽</div>
+        <div id="back" class="toolButton">回退</div>
+        <div id="clear" class="toolButton">清空</div>
+    </div>
+</div>
+</body>
+</html>

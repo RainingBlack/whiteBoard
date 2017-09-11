@@ -1,0 +1,23 @@
+{
+  "name": "mebutoo-wbsdk",
+  "version": "0.3.0",
+  "description": "mebutoo white board sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --presets babel-preset-es2015 --out-dir publish",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://vcs.51talk.com/AC/acPlugs.git"
+  },
+  "keywords": [
+    "mebutoo"
+  ],
+  "devDependencies": {
+    "jquery": "^2.1.1"
+  },
+  "author": "Rain",
+  "license": "ISC"
+}

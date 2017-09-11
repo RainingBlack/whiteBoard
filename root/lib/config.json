@@ -1,0 +1,80 @@
+{
+  "name": "WhiteBoardSDK",
+  "editor": "0.3.0",
+  "isDevelopment" : true,
+  "headConsole" : "|**********clientSDK*********> ",
+  "canvasIndex" : 98,
+  "openedTools" : ["pencil","arrow","rect","circle","draft","highPencil","text","rubber","reEdit","back","clear"],
+  "BanKey":[9],
+  "boardInfo" : {
+    "constConf" : {
+      "type" : "const",
+      "ownerID" : {
+        "value" : "",
+        "info" : "string 白板所属人的userID"
+      },
+      "isOnline" : {
+        "value" : false,
+        "info" : "Booleans 是否是在线模式，即同步模式，布尔值，默认为离线模式"
+      },
+      "module" : {
+        "value" : "draw",
+        "info" : "string(draw/show) 白板模式，显示加绘制/只显示"
+      },
+      "reEdit" : {
+        "value" : true,
+        "info" : "Booleans  是否开发重写模式，无UI控制类型"
+      },
+      "firstTool" : {
+        "value" : "pencil",
+        "info" : "string(pencil/arrow/rect/circle/draft/highPencil/text/rubber) 默认的画笔类型,可以不设置"
+      },
+      "baseSize" : {
+        "value" : [800,800],
+        "info" : "宽度标准值[宽,高],const初次设置后不可修改：可选值 非0正整数 , 表示白板中的相对大小基值，参考rem的fontSize , 例如：800时设置为4，则400时变为2,1600时变为8"
+      },
+      "recordInfo" : {
+        "value" : [],
+        "info" : "每条笔迹想要展示的信息[所属者 , 描述信息]"
+      }
+    },
+    "hotUpdateConf" : {
+      "type" : "hotUpdate",
+      "pauseDraw" : false,
+      "property_board" : {
+        "color":"#FFFFFF",
+        "top" : "0px",
+        "left" : "0px",
+        "width" : "0px",
+        "height" : "0px"
+      },
+      "property_highPencil" : {
+        "color" : "#FF0000",
+        "alpha" : 0.5,
+        "size" : 20
+      },
+      "property_text" : {
+        "size" : 30,
+        "color" : "#FF0000",
+        "family" : "songti",
+        "bgColor" : "rgba(255,255,255,0.8)"
+      },
+      "property_other" : {
+        "size" : 3,
+        "color" : "#FF0000",
+        "selectedColor" : "#FFA735"
+      },
+      "property_targetSelect" : {
+        "color" : "#0000FF"
+      },
+      "property_shapes" : {
+        "isShow" : false,
+        "showContent" : {
+          "owner" : true,
+          "info" : true
+        },
+        "showTimeLay" : 1
+      }
+    }
+  }
+}
